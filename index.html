@@ -6,7 +6,7 @@
     <title>Harsh Kumar | Software Development & AI Mentor</title>
     <meta
       name="description"
-      content="Personalized mentorship in Full Stack Development and AI through practical projects, industry guidance, and small-group learning."
+      content="Personalized mentorship in Full Stack Development and AI. Learn from a Senior Developer with 4+ years experience. Real projects, real placements."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,14 +17,16 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="container header-container">
-        <a href="#" class="logo"> Harsh Kumar </a>
+        <a href="#" class="logo">Harsh Kumar</a>
         <nav class="desktop-nav">
-          <a href="#outcomes"> Outcomes </a>
-          <a href="#programs"> Programs </a>
-          <a href="#success"> Success Stories </a>
-          <a href="#about"> About </a>
+          <a href="#outcomes">Outcomes</a>
+          <a href="#programs">Programs</a>
+          <a href="#journey">Journey</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#about">About</a>
         </nav>
         <a
           href="https://wa.me/919558306167"
@@ -33,13 +35,14 @@
         >
           Chat on WhatsApp
         </a>
-        <button id="menuBtn" class="menu-btn" aria-label="Menu">☰</button>
+        <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
       </div>
       <div id="mobileMenu" class="mobile-menu">
-        <a href="#outcomes"> Outcomes </a>
-        <a href="#programs"> Programs </a>
-        <a href="#success"> Success Stories </a>
-        <a href="#about"> About </a>
+        <a href="#outcomes">Outcomes</a>
+        <a href="#programs">Programs</a>
+        <a href="#journey">Journey</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
         <a
           href="https://wa.me/919558306167"
           target="_blank"
@@ -49,38 +52,65 @@
         </a>
       </div>
     </header>
+
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
+          <div class="batch-badge">
+            <span class="batch-dot"></span>
+            Batch 8 · July 2026 &mdash; <strong>3 seats left</strong>
+          </div>
           <div class="eyebrow">SOFTWARE DEVELOPMENT & AI MENTOR</div>
-          <h1>Learn Through Real Projects, Not Tutorials.</h1>
+          <h1>Learn Through Real Projects,<br />Not Tutorials.</h1>
           <p class="hero-description">
             Personalized mentorship in Full Stack Development and AI. Learn
-            directly from industry experience through structured guidance,
-            practical projects, and small-group learning.
+            directly from 4+ years of industry experience through structured
+            guidance, practical projects, and small-group learning.
           </p>
+          <div class="hero-social-proof">
+            <div class="proof-item">
+              <span class="proof-num">50+</span>
+              <span class="proof-label">Students</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+              <span class="proof-num">4+</span>
+              <span class="proof-label">Years mentoring</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+              <span class="proof-num">5★</span>
+              <span class="proof-label">Teacheron rating</span>
+            </div>
+          </div>
           <div class="hero-actions">
             <a
               href="https://wa.me/919558306167"
               target="_blank"
               class="btn btn-primary"
             >
-              Start Learning
+              Book a Free Call
             </a>
-            <a href="#programs" class="btn btn-secondary"> View Programs </a>
+            <a href="#programs" class="btn btn-secondary">View Programs</a>
           </div>
         </div>
         <div class="hero-image">
-          <img
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
-            alt="Mentor"
-          />
+          <!-- Replace with your actual photo: <img src="./assets/harsh-photo.jpg" alt="Harsh Kumar" /> -->
+          <div class="hero-photo-placeholder">
+            <img src="./assets/hero.png" alt="hero-img-harsh" />
+            <!-- <div class="photo-initials">HK</div>
+            <p class="photo-hint">
+              📸 Replace this with your photo<br /><small
+                >Add harsh-photo.jpg to /assets</small
+              >
+            </p> -->
+          </div>
         </div>
       </div>
     </section>
 
     <!-- OUTCOMES -->
-
     <section id="outcomes" class="section">
       <div class="container">
         <div class="section-heading">
@@ -89,197 +119,400 @@
         </div>
         <div class="outcomes-grid">
           <div class="outcome-card">
-            <h3>Build Real Business</h3>
+            <div class="outcome-icon">🚀</div>
+            <h3>Build Real Products</h3>
             <p>
-              Learn by creating applications that resemble real-world products.
+              Create full applications that resemble real-world products — not
+              just tutorial clones.
             </p>
           </div>
           <div class="outcome-card">
-            <h3>Internship Ready</h3>
+            <div class="outcome-icon">💼</div>
+            <h3>Internship & Job Ready</h3>
             <p>
-              Gain the confidence and experience needed to apply for
-              internships.
+              Gain the confidence, portfolio, and practical skills to land your
+              first role.
             </p>
           </div>
           <div class="outcome-card">
-            <h3>Industry Guidance</h3>
+            <div class="outcome-icon">🏭</div>
+            <h3>Industry Perspective</h3>
             <p>
-              Learn from practical development experience, not just course
-              material.
+              Learn how software is actually built in companies — patterns,
+              reviews, deployment.
             </p>
           </div>
           <div class="outcome-card">
-            <h3>Portfolio Development</h3>
+            <div class="outcome-icon">📁</div>
+            <h3>Portfolio That Stands Out</h3>
             <p>
-              Create projects that can strengthen your resume and GitHub
-              profile.
+              Graduate with GitHub projects and a portfolio that gets noticed by
+              recruiters.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===================== -->
     <!-- PROGRAMS -->
-    <!-- ===================== -->
-
     <section id="programs" class="section section-dark">
       <div class="container">
         <div class="section-heading">
           <div class="section-label">PROGRAMS</div>
-
           <h2>Choose Your Learning Path</h2>
+          <p class="section-subtitle">
+            Both tracks include 1-on-1 sessions, project reviews, and interview
+            prep.
+          </p>
         </div>
-
         <div class="programs-grid">
-          <!-- WEB -->
-
-          <div class="program-card">
+          <div class="program-card program-featured">
             <div class="program-tag">WEB DEVELOPMENT</div>
-
             <h3>Full Stack Development</h3>
-
-            <p>Learn how modern web applications are built.</p>
-
+            <p>
+              Learn how modern web applications are designed, built, and
+              deployed — end to end.
+            </p>
             <ul>
               <li>HTML & CSS</li>
               <li>JavaScript</li>
               <li>React.js</li>
               <li>Node.js</li>
               <li>MongoDB</li>
-              <li>Deployment</li>
+              <li>Deployment & DevOps basics</li>
             </ul>
-
             <a
               href="https://wa.me/919558306167?text=Hi%20Harsh,%20I%20am%20interested%20in%20the%20Web%20Development%20Track."
-              class="program-link"
+              class="btn btn-primary"
               target="_blank"
             >
-              Learn More →
+              Get Started →
             </a>
           </div>
-
-          <!-- AI -->
-
           <div class="program-card">
             <div class="program-tag">AI & MACHINE LEARNING</div>
-
             <h3>AI & ML Track</h3>
-
-            <p>Build practical AI skills from fundamentals to applications.</p>
-
+            <p>
+              Build practical AI skills from Python fundamentals to real ML and
+              LLM applications.
+            </p>
             <ul>
               <li>Python</li>
               <li>Data Analysis</li>
               <li>Machine Learning</li>
               <li>Deep Learning</li>
-              <li>LLMs</li>
+              <li>LLMs & Prompt Engineering</li>
               <li>AI Projects</li>
             </ul>
-
             <a
               href="https://wa.me/919558306167?text=Hi%20Harsh,%20I%20am%20interested%20in%20the%20AI%20Track."
-              class="program-link"
+              class="btn btn-primary"
               target="_blank"
             >
-              Learn More →
+              Get Started →
             </a>
+          </div>
+        </div>
+        <p class="pricing-note">
+          💬 Pricing is flexible based on your goals and schedule.<br />
+          <a
+            href="https://wa.me/919558306167?text=Hi%20Harsh,%20can%20you%20share%20pricing%20details?"
+            target="_blank"
+            >Ask on WhatsApp →</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- LEARNING JOURNEY -->
+    <section id="journey" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-label">HOW IT WORKS</div>
+          <h2>Your Learning Journey</h2>
+        </div>
+        <div class="journey-steps">
+          <div class="journey-step">
+            <div class="journey-num">01</div>
+            <div class="journey-content">
+              <h3>Free discovery call</h3>
+              <p>
+                We discuss your current level, goals, and the right track for
+                you. No commitment needed.
+              </p>
+            </div>
+          </div>
+          <div class="journey-step">
+            <div class="journey-num">02</div>
+            <div class="journey-content">
+              <h3>Weeks 1–4: foundations</h3>
+              <p>
+                Core concepts, structured lessons, and your first small project
+                to build confidence.
+              </p>
+            </div>
+          </div>
+          <div class="journey-step">
+            <div class="journey-num">03</div>
+            <div class="journey-content">
+              <h3>Weeks 5–10: build real projects</h3>
+              <p>
+                End-to-end product development. Code reviews, industry patterns,
+                real deployments.
+              </p>
+            </div>
+          </div>
+          <div class="journey-step">
+            <div class="journey-num">04</div>
+            <div class="journey-content">
+              <h3>Weeks 11–12: career prep</h3>
+              <p>
+                Portfolio polish, GitHub cleanup, mock interviews, and job
+                application strategy.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- SUCCESS STORIES -->
-
-    <section id="success" class="section">
+    <section id="success" class="section section-dark">
       <div class="container">
         <div class="section-heading">
           <div class="section-label">STUDENT SUCCESS STORIES</div>
-
-          <h2>Real Outcomes. Real Feedback.</h2>
+          <h2>Real Students. Real Outcomes.</h2>
         </div>
-
         <div class="success-grid">
           <div class="success-card">
             <div class="success-image">
-              <img src="./assets/tanush-cropped.png" alt="sap-labs" />
+              <img src="./assets/tanush-cropped.png" alt="Tanush — SAP Labs" />
             </div>
-            <h3>SAP Labs Placement</h3>
-            <p>Student successfully transitioned into the industry.</p>
-            <blockquote>
-              "Structured learning and practical projects helped me build
-              confidence."
-            </blockquote>
+            <div class="success-body">
+              <div class="success-badge success-badge--placement">
+                SAP Labs Placement
+              </div>
+              <h3>Tanush</h3>
+              <p>
+                Went from learning basics to landing a full-time role at SAP
+                Labs after structured mentorship and real project work.
+              </p>
+              <blockquote>
+                "Structured learning and practical projects helped me build
+                confidence and get job-ready faster than I expected."
+              </blockquote>
+            </div>
           </div>
-
           <div class="success-card">
             <div class="success-image">
-              <img src="./assets/zach-cropped.png" alt="parents-trust" />
+              <img src="./assets/zach-cropped.png" alt="Parent testimonial" />
             </div>
-
-            <h3>Parent's Trust</h3>
-
-            <p>I have gained parent's trust to mentor their kids.</p>
-
-            <blockquote>
-              "Hands-on mentoring approach made concepts easy to apply."
-            </blockquote>
+            <div class="success-body">
+              <div class="success-badge success-badge--trust">
+                Parent's Trust
+              </div>
+              <h3>Zach's Parent</h3>
+              <p>
+                Parents trust Harsh to mentor their children with a patient,
+                structured, and results-focused approach.
+              </p>
+              <blockquote>
+                "The hands-on approach made concepts easy to apply. My son
+                gained real confidence very quickly."
+              </blockquote>
+            </div>
           </div>
-
           <div class="success-card">
             <div class="success-image">
-              <img src="./assets/start-ups.png" alt="students-start-up" />
+              <img src="./assets/start-ups.png" alt="Student startup" />
             </div>
-
-            <h3>Student Startup</h3>
-
-            <p>Mentorship helped transform ideas into products.</p>
-
-            <blockquote>
-              "Focused on implementation, not just theory."
-            </blockquote>
+            <div class="success-body">
+              <div class="success-badge success-badge--startup">
+                Student Startup
+              </div>
+              <h3>Student founder</h3>
+              <p>
+                Mentorship helped a student take an idea from concept to a
+                working product, building both the technical and product
+                mindset.
+              </p>
+              <blockquote>
+                "Harsh focused on implementation, not just theory. We shipped a
+                real product by end of the program."
+              </blockquote>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-
-    <section id="about" class="section section-dark">
-      <div class="container about-grid">
-        <div>
-          <div class="section-label">ABOUT HARSH</div>
-
-          <h2>Mentoring Through Practical Experience.</h2>
-
-          <p>
-            Senior Software Developer with 4+ years of mentoring experience. My
-            focus is helping students build real skills through projects,
-            structured learning paths, and personalized mentorship.
+    <!-- TEACHERON REVIEWS -->
+    <section id="reviews" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-label">VERIFIED REVIEWS</div>
+          <h2>What Students Say on Teacheron</h2>
+          <p class="section-subtitle">
+            Verified reviews from
+            <a
+              href="https://www.teacheron.com/tutor/8X1n"
+              target="_blank"
+              class="teacheron-link"
+            >
+              teacheron.com/tutor/8X1n ↗
+            </a>
           </p>
         </div>
 
-        <div class="about-card">
-          <div style="display: flex; justify-content: space-evenly">
-            <div class="metric">
-              <span>50+</span>
-              Students Mentored
-            </div>
+        <!--
+          ============================================================
+          TEACHERON REVIEWS — HOW TO ADD YOUR SCREENSHOTS
+          ============================================================
+          1. Take screenshots of your Teacheron reviews
+          2. Save them to the /assets/ folder as:
+               review-1.png, review-2.png, review-3.png ...
+          3. Uncomment the blocks below and update filenames
 
-            <div class="metric">
-              <span>Global</span>
-              Online Mentorship
+          The screenshot cards are already styled — just add the images.
+          ============================================================
+        -->
+
+        <div class="reviews-grid">
+          <!-- OPTION A: Screenshot cards (recommended — add your images) -->
+          <!--
+          <div class="review-screenshot-card">
+            <img src="./assets/review-1.png" alt="Teacheron review 1" />
+          </div>
+          <div class="review-screenshot-card">
+            <img src="./assets/review-2.png" alt="Teacheron review 2" />
+          </div>
+          <div class="review-screenshot-card">
+            <img src="./assets/review-3.png" alt="Teacheron review 3" />
+          </div>
+          -->
+
+          <!-- OPTION B: Typed review cards (use these until you have screenshots) -->
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Thanks to Mr. Kumar, I now feel confident in building websites
+              and working with front-end technologies. I highly recommend them
+              to anyone looking to learn web development!"
+            </p>
+            <div class="review-meta">
+              <span class="review-author">Student on Teacheron</span>
+              <span class="review-source">
+                <img
+                  src="https://www.google.com/s2/favicons?domain=teacheron.com&sz=16"
+                  alt=""
+                  width="14"
+                  height="14"
+                />
+                teacheron.com
+              </span>
             </div>
           </div>
-          <div style="display: flex; justify-content: space-evenly">
-            <div class="metric">
-              <span>4+</span>
-              Years Mentoring
-            </div>
 
+          <div class="review-card">
+            <div class="review-stars">★★★★</div>
+            <p class="review-text">
+              "The MERN stack course under Sir was an excellent learning
+              experience. The concepts of MongoDB, Express, React, and Node.js
+              were explained in a clear and structured way. The hands-on
+              projects helped me apply the knowledge effectively."
+            </p>
+            <div class="review-meta">
+              <span class="review-author">Student on Teacheron</span>
+              <span class="review-source">
+                <img
+                  src="https://www.google.com/s2/favicons?domain=teacheron.com&sz=16"
+                  alt=""
+                  width="14"
+                  height="14"
+                />
+                teacheron.com
+              </span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Harsh was so patient in teaching me the steps to overcome crucial
+              coding challenges. Pointed out how to be successful is to always
+              go back to the basics. Excited on the program to further my
+              understanding of MERN."
+            </p>
+            <div class="review-meta">
+              <span class="review-author">Student on Teacheron</span>
+              <span class="review-source">
+                <img
+                  src="https://www.google.com/s2/favicons?domain=teacheron.com&sz=16"
+                  alt=""
+                  width="14"
+                  height="14"
+                />
+                teacheron.com
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-cta">
+          <a
+            href="https://www.teacheron.com/tutor/8X1n"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            See all reviews on Teacheron ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section-dark">
+      <div class="container about-grid">
+        <div class="about-text">
+          <div class="section-label">ABOUT HARSH</div>
+          <h2>Mentoring Through Practical Experience.</h2>
+          <p>
+            Senior Software Developer with 4+ years of hands-on mentoring
+            experience. I've helped 50+ students — from complete beginners to
+            career-switchers — build real products, land internships, and grow
+            into confident developers.
+          </p>
+          <p>
+            My approach is simple: no fluff, no 4-hour tutorial videos. We build
+            things together and you walk away with code you understand and can
+            defend in an interview.
+          </p>
+          <a
+            href="https://wa.me/919558306167"
+            target="_blank"
+            class="btn btn-primary"
+            style="margin-top: 1.5rem; display: inline-block"
+          >
+            Let's Talk →
+          </a>
+        </div>
+        <div class="about-card">
+          <div class="metrics-grid">
             <div class="metric">
-              <span>Results</span>
-              Start-ups - Upskill
+              <span class="metric-num">50+</span>
+              <span class="metric-label">Students mentored</span>
+            </div>
+            <div class="metric">
+              <span class="metric-num">4+</span>
+              <span class="metric-label">Years mentoring</span>
+            </div>
+            <div class="metric">
+              <span class="metric-num">🌍</span>
+              <span class="metric-label">Global online</span>
+            </div>
+            <div class="metric">
+              <span class="metric-num">5★</span>
+              <span class="metric-label">Teacheron rating</span>
             </div>
           </div>
         </div>
@@ -287,52 +520,101 @@
     </section>
 
     <!-- FAQ -->
-
     <section class="section">
       <div class="container faq-container">
         <div class="section-heading">
           <div class="section-label">FAQ</div>
-
           <h2>Frequently Asked Questions</h2>
         </div>
-
         <details>
           <summary>Do I need prior experience?</summary>
-
-          <p>No. Both beginners and intermediate learners are welcome.</p>
+          <p>
+            No. Both complete beginners and intermediate learners are welcome.
+            We start from where you are.
+          </p>
         </details>
-
         <details>
-          <summary>Do you teach one-on-one?</summary>
-
-          <p>Yes, along with small-group mentoring.</p>
+          <summary>Is this 1-on-1 or group?</summary>
+          <p>
+            Both. You get personal 1-on-1 sessions plus access to a small group
+            of peers for accountability and collaboration.
+          </p>
         </details>
-
         <details>
-          <summary>Will I build projects?</summary>
-
-          <p>Absolutely. Projects are a core part of the learning process.</p>
+          <summary>Will I actually build projects?</summary>
+          <p>
+            Absolutely — projects are the core of the program, not an
+            afterthought. You'll finish with 2–3 deployable projects on your
+            GitHub.
+          </p>
+        </details>
+        <details>
+          <summary>How many seats are in a batch?</summary>
+          <p>
+            I keep batches small (4–6 students) to ensure personal attention and
+            mentorship quality.
+          </p>
+        </details>
+        <details>
+          <summary>What are the fees?</summary>
+          <p>
+            Pricing is flexible based on your background and goals. Message me
+            on WhatsApp and I'll share the details — no pressure.
+          </p>
+        </details>
+        <details>
+          <summary>How long is the program?</summary>
+          <p>
+            Typically 12 weeks, though we adjust based on your pace and
+            availability. Part-time and weekend schedules are available.
+          </p>
         </details>
       </div>
     </section>
 
-    <!-- CTA -->
-
+    <!-- FINAL CTA -->
     <section class="section final-cta">
       <div class="container">
-        <h2>Ready to Start Learning?</h2>
-
-        <p>Let's discuss your goals and create a learning path.</p>
-
-        <a
-          href="https://wa.me/919558306167"
-          target="_blank"
-          class="btn btn-primary"
-        >
-          Chat on WhatsApp
-        </a>
+        <div class="cta-inner">
+          <div class="batch-badge batch-badge--light">
+            <span class="batch-dot"></span>
+            Batch 8 starts July 2025 — <strong>3 seats left</strong>
+          </div>
+          <h2>Ready to Start Learning?</h2>
+          <p>
+            Let's talk about your goals and see if we're a good fit. First call
+            is free.
+          </p>
+          <div class="cta-buttons">
+            <a
+              href="https://wa.me/919558306167"
+              target="_blank"
+              class="btn btn-primary btn-large"
+            >
+              Chat on WhatsApp
+            </a>
+            <a
+              href="https://www.teacheron.com/tutor/8X1n"
+              target="_blank"
+              class="btn btn-ghost"
+            >
+              View Teacheron Profile ↗
+            </a>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="mobile-sticky-cta">
+      <a
+        href="https://wa.me/919558306167"
+        target="_blank"
+        class="btn btn-primary btn-full"
+      >
+        💬 Chat on WhatsApp — Book Free Call
+      </a>
+    </div>
 
     <script src="script.js"></script>
   </body>

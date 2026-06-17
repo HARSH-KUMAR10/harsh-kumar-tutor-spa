@@ -93,3 +93,66 @@ if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     el.style.transition = "none";
   });
 }
+
+const batchNoElement = document.getElementById("batch-no");
+const monthElement = document.getElementById("month");
+const yearElement = document.getElementById("year");
+const seatsLeftElement = document.getElementById("seats-left");
+
+const batchNo1Element = document.getElementById("batch-no1");
+const month1Element = document.getElementById("month1");
+const year1Element = document.getElementById("year1");
+const seatsLeft1Element = document.getElementById("seats-left1");
+
+function getMonthName(monthNumber) {
+  if (monthNumber === 1) return "January";
+  else if (monthNumber === 2) return "February";
+  else if (monthNumber === 3) return "March";
+  else if (monthNumber === 4) return "April";
+  else if (monthNumber === 5) return "May";
+  else if (monthNumber === 6) return "June";
+  else if (monthNumber === 7) return "July";
+  else if (monthNumber === 8) return "August";
+  else if (monthNumber === 9) return "September";
+  else if (monthNumber === 10) return "October";
+  else if (monthNumber === 11) return "November";
+  else if (monthNumber === 12) return "December";
+}
+
+function getSeatsLeft(date) {
+  if (date <= 13) {
+    return 3;
+  } else if (date <= 18) {
+    return 2;
+  } else if (date <= 23) {
+    return 1;
+  }
+}
+
+function getBatch(month, year) {
+  console.log("===> getBatch:", month, year, year % 2026);
+  const yearBatchCount = (year % 2026) * 6;
+  console.log("===> batch: ", Math.ceil((month + 1) / 2) + yearBatchCount);
+  return Math.ceil((month + 1) / 2) + yearBatchCount;
+}
+
+function init() {
+  const currentDate = new Date();
+  const monthNo = currentDate.getMonth();
+  const monthName = getMonthName(monthNo + 1);
+  const year = currentDate.getFullYear();
+  const date = currentDate.getDate();
+  const seatsLeft = getSeatsLeft(date);
+  const batchNo = getBatch(monthNo, year);
+  batchNoElement.innerHTML = batchNo;
+  monthElement.innerHTML = monthName;
+  yearElement.innerHTML = year;
+  seatsLeftElement.innerHTML = seatsLeft;
+
+  batchNo1Element.innerHTML = batchNo;
+  month1Element.innerHTML = monthName;
+  year1Element.innerHTML = year;
+  seatsLeft1Element.innerHTML = seatsLeft;
+}
+
+init();

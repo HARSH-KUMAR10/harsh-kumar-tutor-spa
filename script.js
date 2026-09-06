@@ -2,6 +2,11 @@
 //   HARSH KUMAR — TUTOR SPA  |  script.js
 // =============================================
 
+const TOTAL_STUDENTS = 25;
+const TEACHERON_RATING = 4.5;
+const TOTAL_YEARS_OF_TEACHING_EXP = parseInt(new Date().getFullYear()) - 2021;
+const TOTAL_YEARS_OF_WORKING_EXP = parseInt(new Date().getFullYear()) - 2022;
+
 // Mobile menu toggle
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
@@ -155,4 +160,26 @@ function init() {
   seatsLeft1Element.innerHTML = seatsLeft;
 }
 
-init();
+function setValueToElements(elements, value) {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].innerHTML = value;
+  }
+}
+
+function initStats() {
+  const studentCountElements = document.getElementsByClassName("student-count");
+  setValueToElements(studentCountElements, TOTAL_STUDENTS + "+");
+  const totalTeachingExpElements =
+    document.getElementsByClassName("total-teachin-exp");
+  setValueToElements(
+    totalTeachingExpElements,
+    TOTAL_YEARS_OF_TEACHING_EXP + "+",
+  );
+  const teacherOnRatingStateElement = document.getElementsByClassName(
+    "teacheron-rating-stat",
+  );
+  setValueToElements(teacherOnRatingStateElement, TEACHERON_RATING + "★");
+}
+
+// init();
+initStats();
